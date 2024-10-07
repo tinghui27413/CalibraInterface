@@ -1,0 +1,25 @@
+{
+    "FILENAME_PREFIX": "calibrateResult_",
+    "PUMP_CHANNEL": 2,
+    "SYRING_TYPE": "glass_L (10 ml)",
+    "RATE_LIST": [
+        10.0,
+        10.0,
+        10.0
+    ],
+    "TIME_LIST": [
+        [
+            10.0,
+            10.0
+        ],
+        [
+            10.0,
+            10.0
+        ],
+        [
+            10.0,
+            10.0
+        ]
+    ],
+    "AUTO_VERIFY": true
+}

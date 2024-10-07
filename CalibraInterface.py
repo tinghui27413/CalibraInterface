@@ -36,7 +36,7 @@ class Application(tk.Tk):
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
         x = (screen_width // 2) - (window_width // 2)
-        y = (screen_height // 2) - (window_height // 2) -50
+        y = (screen_height // 2) - (window_height // 2)+100
         
         # Update the window geometry to include the calculated coordinates for centering
         self.geometry(f"{window_width}x{window_height}+{x}+{y}")# Top-left corner position at (x, y)
@@ -279,7 +279,7 @@ class PageOne(ButtonTemplate):
         
         # 換頁設定區域
         self.frame_switch = LabelFrame(self, text=PageOne.translations['en']['SWITCH_PAGES'], padx=10, pady=10,width=labelframe_width, height=labelframe_height)
-        self.create_button(frame=self.frame_switch,r=0,c=1,key='NEXT',com=lambda: parent.change_frame_and_update_language("PageOne","PageTwo"),button_state=tk.DISABLED)
+        self.create_button(frame=self.frame_switch,r=0,c=1,key='NEXT',com=lambda: parent.change_frame_and_update_language("PageOne","PageTwo"),button_state=tk.NORMAL)
         self.create_button(frame=self.frame_switch,r=0,c=0,key='GO_BACK',com=None,button_state=tk.DISABLED)
         
         # 佈局
