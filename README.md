@@ -17,7 +17,7 @@
 
 ## 安裝需求
 
-- Python 3.x
+- Python 3.12
 - 需要安裝 `pyserial` 庫進行串口通信：
   ```bash
   pip install pyserial
